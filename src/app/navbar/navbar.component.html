@@ -1,0 +1,9 @@
+<ul ngbNav #nav="ngbNav" class="navbar justify-content-center nav-pills">
+  <li>
+    <a routerLink="/">Wayfarer</a>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink routerLink="/cities">Cities</a>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
