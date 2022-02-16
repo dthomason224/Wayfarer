@@ -1,9 +1,9 @@
-<ul ngbNav #nav="ngbNav" class="navbar justify-content-center nav-pills">
-  <li>
-    <a routerLink="/">Wayfarer</a>
+<ul ngbNav #nav="ngbNav" class="navbar justify-content-start nav-pills">
+  <li class="wayferer-logo">
+    <a  routerLink="/">Wayfarer</a>
   </li>
   <li ngbNavItem>
-    <a ngbNavLink routerLink="/cities">Cities</a>
+    <a id="city-link" ngbNavLink routerLink="/cities">Cities</a>
   </li>
 </ul>
 <div [ngbNavOutlet]="nav"></div>
