@@ -1,0 +1,25 @@
+#home {
+  display: flex;
+}
+
+#cities_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  flex-direction: column;
+  width: 33%;
+  background-color: grey;
+}
+
+#post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 66%;
+}
+
+li {
+  flex-grow: 1;
+}

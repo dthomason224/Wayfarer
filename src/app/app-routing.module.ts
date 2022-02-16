@@ -1,4 +1,4 @@
-import { CitiesComponent } from './cities/cities.component';
+import { CitiesComponent } from './home-page/cities/cities.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RouterModule, Routes } from "@angular/router";
 import { NgModule } from '@angular/core';
