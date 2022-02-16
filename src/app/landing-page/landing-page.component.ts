@@ -10,8 +10,12 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 export class LandingPageComponent implements OnInit {
   images = [
-    {title: "First", src: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"},
-    {title: "Second", src: "https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"}
+    {title: "First", src: "./assets/images/London.jpg"},
+    {title: "Second", src: "./assets/images/London2.jpg"},
+    {title: "Third", src: "./assets/images/Gibraltar.jpg"},
+    {title: "Fourth", src: "./assets/images/Gibraltar2.jpg"},
+    {title: "Fifth", src: "./assets/images/San Francisco.jpg"},
+    {title: "Sixth", src: "./assets/images/San Francisco2.jpg"}
   ]
 
   constructor(config : NgbCarouselConfig) {
