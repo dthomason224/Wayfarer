@@ -1,0 +1,40 @@
+.navbar {
+  background-color: black;
+  padding: 30px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 25px;
+  
+}
+
+a:hover{
+  color: white;
+}
+
+.nav-link:hover{
+/* background-color: lightskyblue; */
+transform: scale(1.2);
+}
+
+#wayfarer-home{
+  font-size: 40px;
+}
+
+#logo{
+  width: 40px;
+  height: 40px;
+}
+
+ .searchbar input[type=text]{
+  
+    float: right;
+    padding: 6px;
+    border: none;
+    /* margin-top: 8px; */
+    margin-left: 700px; /*is there a better way?*/
+    font-size: 20px;
+  
+}

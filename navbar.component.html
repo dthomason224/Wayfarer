@@ -1,0 +1,14 @@
+<ul ngbNav #nav="ngbNav" class="navbar justify-content-start nav-pills">
+  <li>
+    <img id="logo" src="../../assets/images/logo.png">
+  </li>
+  <li>
+    <a id="wayfarer-link" routerLink="/">Wayfarer</a>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink routerLink="/cities">Cities</a>
+  </li>
+  <div class="searchbar"><input type="text" placeholder="Search.."> 
+  </div>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
