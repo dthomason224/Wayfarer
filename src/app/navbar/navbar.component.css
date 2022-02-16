@@ -1,6 +1,6 @@
 .navbar {
   background-color: black;
-  padding: 30px;
+  padding: 15px;
 }
 
 .navbar a{
@@ -29,13 +29,13 @@ transform: scale(1.2);
 
 }
 
- .searchbar input[type=text]{
+ /* input[type=text]{
   
     float: right;
-    padding: 6px;
-    border: none;
-    /* margin-top: 8px; */
-    margin-left: 700px; /*is there a better way?*/
-    font-size: 20px;
-  
-}
+  } */
+
+
+  div.form-group{
+   float: right ;
+   margin-left: 600px;
+  }
