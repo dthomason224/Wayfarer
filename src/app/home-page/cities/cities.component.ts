@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cities',
@@ -7,14 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
-  cities: string[] = [];
+  cities: Observable<any> = this.http.get("/api/cities");
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.cities.push("San Francisco");
-    this.cities.push("London");
-    this.cities.push("Gibraltar");
+
   }
 
 }

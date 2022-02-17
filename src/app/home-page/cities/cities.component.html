@@ -4,8 +4,8 @@
       <div id="title">
         <h1>Cities</h1>
       </div>
-      <div id="city_list" *ngFor="let city of cities; index as i">
-        <app-city cityName="{{city}}" [index]="i+1"></app-city>
+      <div id="city_list" *ngFor="let city of cities | async">
+        <app-city cityName="{{city.name}}" [index]="city.id"></app-city>
       </div>
     </div>
   </div>
