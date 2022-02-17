@@ -1,20 +1,12 @@
 <div id="home">
   <div id="cities_container">
-    <div id="title">
-      <h1>Cities</h1>
-    </div>
-    <div id="city_list">
-      <ul ngbNav #nav="ngbNav" class="nav flex-column nav-pills">
-        <li ngbNavItem>
-          <a>San Francisco</a>
-        </li>
-        <li ngbNavItem>
-          <a>London</a>
-        </li>
-        <li ngbNavItem>
-          <a>Gibraltar</a>
-        </li>
-      </ul>
+    <div class="row">
+      <div id="title">
+        <h1>Cities</h1>
+      </div>
+      <div id="city_list" *ngFor="let city of cities; index as i">
+        <app-city cityName="{{city}}" [index]="i+1"></app-city>
+      </div>
     </div>
   </div>
   <div id="post">
