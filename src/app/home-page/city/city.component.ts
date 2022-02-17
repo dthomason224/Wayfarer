@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-city',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./city.component.css']
 })
 export class CityComponent implements OnInit {
+
+  @Input() cityName:string = "";
+
+  @Input() index: number = 0;
 
   constructor() { }
 
