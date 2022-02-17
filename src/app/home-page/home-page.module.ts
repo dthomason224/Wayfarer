@@ -1,9 +1,11 @@
 import { PostComponent } from './post/post.component';
 import { CityComponent } from './city/city.component';
 import { CitiesComponent } from './cities/cities.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   exports: [
     CitiesComponent,
     CityComponent,
-    PostComponent
+    PostComponent,
+    HttpClientModule
   ]
 })
 export class HomePageModule { }

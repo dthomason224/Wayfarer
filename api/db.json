@@ -1,0 +1,55 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "San Francisco",
+      "imgUrl": "assets/images/San Francisco.jpg",
+      "posts": [
+        {
+          "title": "fake title1",
+          "author": "fake author1",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        },
+        {
+          "title": "fake title2",
+          "author": "fake author2",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "London",
+      "imgUrl": "assets/images/London.jpg",
+      "posts": [
+        {
+          "title": "fake title1",
+          "author": "fake author1",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        },
+        {
+          "title": "fake title2",
+          "author": "fake author2",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Gibraltar",
+      "imgUrl": "assets/images/Gibraltar.jpg",
+      "posts": [
+        {
+          "title": "fake title1",
+          "author": "fake author1",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        },
+        {
+          "title": "fake title2",
+          "author": "fake author2",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        }
+      ]
+    }
+  ]
+}
