@@ -31,6 +31,8 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.city = this.route.params.subscribe(params => {
+      this.getPostPage(params['id'], params['author']);
+    })
   }
 }
