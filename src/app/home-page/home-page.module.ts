@@ -1,3 +1,4 @@
+import { FormComponent } from './form/form.component';
 import { PostComponent } from './post/post.component';
 import { CityComponent } from './city/city.component';
 import { CitiesComponent } from './cities/cities.component';
@@ -12,7 +13,8 @@ import { AppRoutingModule } from "../app-routing.module";
   declarations: [
     CitiesComponent,
     CityComponent,
-    PostComponent
+    PostComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,

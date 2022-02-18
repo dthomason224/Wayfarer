@@ -1,6 +1,7 @@
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { Post } from "./post";
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +16,17 @@ export class CrudService {
     .get(`/api/cities/${id}`)
   }
 
-  getPost(id: string, index: string) {
+  getPost(id: string, author: string) {
     return this.http
-    .get(`/api/cities/${id}/posts/${index}`)
+    .get(`/api/cities/${id}/posts/${author}`)
+  }
+
+  addPost(post: Post, id: string): Observable<any> {
+    const headers = {'content-type': 'application/json'};
+    const body = JSON.stringify(post)
+    console.log(body);
+    return this.http.post(`api/cities/${id}/posts`, body, {'headers': headers})
+
   }
 }
+
