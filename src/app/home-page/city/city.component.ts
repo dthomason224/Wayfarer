@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { CrudService } from './../crud.service';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-city',
@@ -7,13 +10,24 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CityComponent implements OnInit {
 
-  @Input() cityName:string = "";
+  city: any;
 
-  @Input() index: number = 0;
+  constructor(private crudAPI: CrudService, private route: ActivatedRoute) {
 
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
+  getCityPage(id: string) {
+    return this.crudAPI.getCity(id)
+    .subscribe(response => {
+      console.log(response);
+      this.city = response;
+    });
+
+  }
+
+  ngOnInit(): void {
+    this.city = this.route.params.subscribe(params => {
+      this.getCityPage(params['id']);
+    })
+  }
 }

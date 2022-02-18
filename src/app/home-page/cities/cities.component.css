@@ -12,7 +12,20 @@
   background-color: grey;
 }
 
-#post {
+#city_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#city {
   display: flex;
   justify-content: center;
   align-items: center;
