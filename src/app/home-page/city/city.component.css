@@ -1,36 +1,30 @@
-.city-component-main {
-  border: 1px solid #000
+#city_container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#post_container {
+  flex-direction: column;
 }
 
-.city-component-aside {
-  background-color: #d3d3d3;
-  border: 1px solid #000
+#image_container {
+  max-width: 500px;
 }
 
-.city-component-aside h1 {
-  margin-left: 65px
+#post_image_container {
+  max-width: 200px;
 }
 
-.city-component-card {
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 25px;
-  height: 125px;
-  margin: 10px;
+#posts {
+  flex-direction: row;
 }
 
-.city-component-card h1 {
-  margin: 10% 0
+.flex_container {
+  display: flex;
+  justify-content: center;
 }
 
-.city-component-card img {
-  border: 1px solid #000;
-  display: block;
-  height: 100px;
-  margin: 10px 0 10px 20px;
-  width: 150px
+img {
+  width: 100%;
 }
 
-.city-component-card a {
-  text-decoration: none
-}
