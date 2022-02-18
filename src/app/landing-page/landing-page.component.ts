@@ -15,7 +15,7 @@ export class LandingPageComponent implements OnInit {
     {title: "Gibraltar Bay", src: "./assets/images/Gibraltar.jpg"},
     {title: "Rock of Gibraltar", src: "./assets/images/Gibraltar2.jpg"},
     {title: "Golden Gate Bridge, San Francisco", src: "./assets/images/San Francisco.jpg"},
-    {title: "Francisco’s historic rail lines", src: "./assets/images/San Francisco2.jpg"}
+    {title: "San Francisco’s historic rail lines", src: "./assets/images/San Francisco2.jpg"}
   ]
 
   constructor(config : NgbCarouselConfig) {
