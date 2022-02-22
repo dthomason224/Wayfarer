@@ -33,3 +33,7 @@ img {
   width: 100%;
 }
 
+div#post_container {
+  margin-left: 50px;
+}
+
