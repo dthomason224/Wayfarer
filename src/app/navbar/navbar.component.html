@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <ul ngbNav #nav="ngbNav" class="navbar justify-content-start nav-pills">
+      <li>
+        <img id="logo" src="../../assets/images/output-onlinepngtools.png">
+      </li>
+      <li>
+        <a id="wayfarer-link" routerLink="/">Wayfarer</a>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="/cities">Cities</a>
+      </li>
+    </ul>
+
+    <form class="navbar-form navbar-right d-flex" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" style="margin-left: 10px" class="btn btn-default btn-outline-success">Search</button>
+    </form>
+
+    <div [ngbNavOutlet]="nav"></div>
+  </div>
+</nav>

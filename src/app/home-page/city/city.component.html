@@ -1,0 +1,24 @@
+<div id="city_container" class="flex_container">
+  <div>
+    <h1>
+      {{city.name}}
+    </h1>
+  </div>
+  <div id="image_container" class="flex_container">
+    <img src="{{city.imgUrl}}" alt="">
+  </div>
+  <div id="post_container" class="flex_container">
+    <h1>Posts</h1>
+    <div id="posts" class="flex-container" *ngFor="let post of city.posts; index as i">
+      <div id="post_image_container">
+        <img src="{{city.imgUrl}}" alt="">
+      </div>
+      <div>
+        <h1>
+          <a routerLink="/cities/{{city.id}}/posts/{{i}}">{{post.title}}</a>
+        </h1>
+        <p>{{post.body}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.carousel_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-height: 700px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+

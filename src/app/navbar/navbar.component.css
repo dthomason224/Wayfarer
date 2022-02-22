@@ -1,0 +1,41 @@
+.navbar {
+  background-color: black;
+  padding: 15px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 25px;
+  
+}
+
+a:hover{
+  color: white;
+  transform: scale(1.2);
+}
+
+.nav-link:hover{
+/* background-color: lightskyblue; */
+transform: scale(1.2);
+}
+
+#wayfarer-home{
+  font-size: 40px;
+}
+
+#logo{
+  width: 50px;
+
+}
+
+ /* input[type=text]{
+  
+    float: right;
+  } */
+
+
+  div.form-group{
+   float: right ;
+   margin-left: 600px;
+  }

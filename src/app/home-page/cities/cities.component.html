@@ -1,0 +1,24 @@
+<div id="home">
+  <div id="cities_container">
+    <div id="title">
+      <h1>Cities</h1>
+    </div>
+    <div id="city_list">
+      <ul ngbNav #nav="ngbNav" class="nav flex-column nav-pills" *ngFor="let city of cities | async">
+          <li ngbNavItem >
+            <div id="city_buttons" class="card bg-dark">
+                <img class="card-img" src="{{city.imgUrl}}" alt="">
+                <div class="card-img-overlay">
+                  <h1>
+                    <a class="card-text" routerLink="/cities/{{city.id}}">{{city.name}}</a>
+                  </h1>
+                </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div id="city">
+    <router-outlet></router-outlet>
+  </div>
+</div>

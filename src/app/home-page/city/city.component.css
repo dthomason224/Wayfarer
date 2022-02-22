@@ -1,0 +1,34 @@
+#city_container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#post_container {
+  flex-direction: column;
+}
+
+#image_container {
+  max-width: 500px;
+}
+
+#post_image_container {
+  max-width: 200px;
+}
+
+#posts {
+  flex-direction: row;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+div#post_container {
+  margin-left: 50px;
+}
+
