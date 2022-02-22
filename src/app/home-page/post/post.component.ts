@@ -1,6 +1,6 @@
 import { CrudService } from './../crud.service';
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -9,17 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
   city: any;
-  post: any;
+  postId: any;
 
   constructor(private route: ActivatedRoute, private crudAPI: CrudService) { }
-
-  getPostPage(id: string, index: string){
-    return this.crudAPI.getPost(id, index)
-    .subscribe(response => {
-      console.log(response);
-      this.city = response;
-    });
-  }
 
   getCityPage(id: string) {
     return this.crudAPI.getCity(id)
@@ -31,8 +23,10 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.city = this.route.params.subscribe(params => {
-      this.getPostPage(params['id'], params['author']);
+    this.route.params.subscribe(params => {
+      this.city = this.getCityPage(params['id']);
+      this.postId = (params['postId']);
     })
+
   }
 }

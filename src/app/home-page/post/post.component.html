@@ -3,10 +3,10 @@
     <h1>Post on {{city.name}}</h1>
   </div>
   <div>
-    <h2>title: {{city.posts.title}}</h2>
-    <h2>Author: {{city.posts.author}}</h2>
+    <h2>title: {{city.posts[postId].title}}</h2>
+    <h2>Author: {{city.posts[postId].author}}</h2>
   </div>
   <div>
-    {{city.posts.body}}
+    {{city.posts[postId].body}}
   </div>
 </div>
