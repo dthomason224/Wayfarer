@@ -1,0 +1,60 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "San Francisco",
+      "imgUrl": "assets/images/San Francisco.jpg",
+      "posts": [
+        {
+          "title": "Top 30 Things To Do in San Francisco",
+          "author": "Rebecca Black",
+          "body": "From the Golden Gate Bridge to Alamo Square, check out the top tourists spots in this great city."
+        },
+        {
+          "title": "What Are The Most Iconic San Francisco Restaurants?",
+          "author": "John Winslow",
+          "body": "A guide to the best dining options San Franciso has to offer."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "London",
+      "imgUrl": "assets/images/London.jpg",
+      "posts": [
+        {
+          "title": "Here are 5 Castles You Can Visit While in London",
+          "author": "Oscar Pence",
+          "body": "Visit these grand castles and pretend you are royalty for the day!"
+        },
+        {
+          "title": "London's Most Thrilling Theme Parks",
+          "author": "Cynthia Grey",
+          "body": "With dozens of different family attractions to choose from, check out these London theme parks for a fun-feuled day with the family!"
+        },
+        {
+          "title": "fake title",
+          "author": "fake author",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia, pariatur qui quis quo ullam vel?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Gibraltar",
+      "imgUrl": "assets/images/Gibraltar.jpg",
+      "posts": [
+        {
+          "title": "Gibraltar...is it in Spain or the Uk?",
+          "author": "Laura  Keptor",
+          "body":   "Did you know that Gibraltar is an overseas territory of the United Kingdom? But this doesn't stop Spain from asserting claim to this land! Let's learn more about this territorial dispute."
+        },
+        {
+          "title": "The Rock of Gibraltar",
+          "author": "Chloe Brown",
+          "body": "The Rock of Gibraltar is located on the Iberian Peninsula and dates back to the Jurassic period."
+        }
+      ]
+    }
+  ]
+}
