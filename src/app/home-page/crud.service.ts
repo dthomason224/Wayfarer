@@ -16,11 +16,6 @@ export class CrudService {
     .get(`/api/cities/${id}`)
   }
 
-  getPost(id: string, author: string) {
-    return this.http
-    .get(`/api/cities/${id}/posts/${author}`)
-  }
-
   addPost(post: Post, id: string): Observable<any> {
     const headers = {'content-type': 'application/json'};
     const body = JSON.stringify(post)

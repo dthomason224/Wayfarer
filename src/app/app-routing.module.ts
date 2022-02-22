@@ -18,7 +18,7 @@ const routes: Routes = [{
         component: CityComponent
       },
       {
-        path: ':id/posts/:author',
+        path: ':id/posts/:postId',
         component: PostComponent
       }
     ]
